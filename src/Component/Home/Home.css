@@ -1,0 +1,51 @@
+.home-page-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.page-title {
+    margin: 10%;
+}
+
+.good-food {
+    color: orangered;
+}
+
+.page-title h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 44px;
+    margin: 0;
+}
+
+.page-title p {
+    color: rgb(78, 75, 75);
+}
+
+.page-title button {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    background-color: orangered;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.page-title button:hover {
+    background-color: rgb(255, 106, 52);
+    cursor: pointer;
+}
+
+.img-home img {
+    /* height: 500px;
+    width: 500px; */
+    width: 100%;
+}
+
+.reviews h1 {
+    text-align: center;
+}

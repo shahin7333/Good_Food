@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Leanne Graham",
+        "review": "5star",
+        "comment": "This type of restaurant i have ever seen.what a excellent environment.there service is awesome.manager is also fantastic.best wishes"
+    },
+    {
+        "id": 2,
+        "name": "Ervin Howell",
+        "review": "5star",
+        "comment": "This type of restaurant i have ever seen.what a excellent environment.there service is awesome.manager is also fantastic.best wishes"
+    },
+    {
+        "id": 3,
+        "name": "Clementine Bauch",
+        "review": "5star",
+        "comment": "This type of restaurant i have ever seen.what a excellent environment.there service is awesome.manager is also fantastic.best wishes"
+    }
+]
