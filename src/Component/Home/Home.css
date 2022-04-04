@@ -76,4 +76,8 @@
     .home-page-container {
         grid-template-columns: 1fr;
     }
+
+    .review-container {
+        grid-template-columns: repeat(1fr 1fr);
+    }
 }

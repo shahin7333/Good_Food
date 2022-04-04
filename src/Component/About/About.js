@@ -6,7 +6,7 @@ const About = () => {
         <div className='about'>
             <h1>Location</h1>
             <p>Blue water, Zindabazar, Sylhet</p>
-            <small className='about-down'>Good food good moood</small>
+            <small className='about-down'>Good food good mood.</small>
         </div>
     );
 };
