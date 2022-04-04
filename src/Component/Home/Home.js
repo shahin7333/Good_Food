@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Comment from '../Comment/Comment';
 import img from '../img/ice-cream.png';
 import './Home.css'
 
@@ -24,6 +25,13 @@ const Home = () => {
             </div>
             <div className='reviews'>
                 <h1>CUSTOMER REVIEWS({comments.length})</h1>
+                <div className='review-container'>
+                    {
+                        comments.map(comment => <Comment key={comment.id} comment={comment}></Comment>)
+                    }
+                </div>
+                <button className='see-all-reviews'>See all reviews</button>
+
             </div>
         </div>
 

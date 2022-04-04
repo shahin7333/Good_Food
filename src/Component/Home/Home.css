@@ -46,6 +46,28 @@
     width: 100%;
 }
 
-.reviews h1 {
+.reviews {
     text-align: center;
+}
+
+.review-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.see-all-reviews {
+    border: 0;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    background-color: orangered;
+    border-radius: 8px;
+    color: white;
+}
+
+.see-all-reviews:hover {
+    cursor: pointer;
+    background-color: rgb(255, 106, 52);
 }
