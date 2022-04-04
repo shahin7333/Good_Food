@@ -1,0 +1,12 @@
+.six-comments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.customer-six-comments {
+    text-align: center;
+}
+
+.review-down-p {
+    color: orangered;
+}

@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Comment from '../Comment/Comment';
 import img from '../img/ice-cream.png';
 import './Home.css'
 
 const Home = () => {
+    const navigate = useNavigate();
+    const showComments = () => {
+        const path = `/reviews`;
+        navigate(path);
+    }
     const [comments, setComments] = useState([]);
     useEffect(() => {
         fetch('comments.json')
@@ -30,8 +36,7 @@ const Home = () => {
                         comments.map(comment => <Comment key={comment.id} comment={comment}></Comment>)
                     }
                 </div>
-                <button className='see-all-reviews'>See all reviews</button>
-
+                <button onClick={showComments} className='see-all-reviews'>See all reviews</button>
             </div>
         </div>
 
