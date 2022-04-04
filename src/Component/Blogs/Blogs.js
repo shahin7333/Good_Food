@@ -12,7 +12,7 @@ const Blogs = () => {
                 </div>
                 <div className='answer'>
                     <h3>What is semantic tag?</h3>
-                    <p>Semantic tag is known also semantic HTML elements which are clearly describe their meaning in a human and machine readable way. It is the purpose of elements and attribute and the logical relationship between element and the attributes of those elements. Its means the HTML more comprehensible by better defines the different section and layout of web pages.</p>
+                    <p>Semantic tag is known also semantic HTML elements which are clearly describe their meaning in a human and machine readable way. It is the purpose of elements and attribute and the logical relationship between element and the attributes of those elements. Its means the HTML more comprehensible by better defines the different section and layout of web pages. <br />Examples: header,footer,main,figure etc</p>
                 </div>
             </div>
         </div>
