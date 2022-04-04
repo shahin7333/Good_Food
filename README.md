@@ -1,6 +1,8 @@
 # WILL YOU KNOW GOOD FOOD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 
+This project live link in netlify with [Create React App]( https://relaxed-elf-22447c.netlify.app/
+).
 
 ## Available Scripts
 
