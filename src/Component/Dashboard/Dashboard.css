@@ -10,3 +10,9 @@
 .chart {
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .chart-container {
+        grid-template-columns: 1fr;
+    }
+}
