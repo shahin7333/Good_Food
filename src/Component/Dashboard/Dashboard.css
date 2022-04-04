@@ -1,3 +1,12 @@
-.chart h1 {
+.charts h1 {
+    text-align: center;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.chart {
     text-align: center;
 }

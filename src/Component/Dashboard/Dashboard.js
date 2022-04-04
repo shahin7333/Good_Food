@@ -41,11 +41,11 @@ const Dashboard = () => {
         }
     ]
     return (
-        <div className='chart'>
+        <div className='charts'>
             <h1>Rechart</h1>
             <div className='chart-container'>
-                <div>
-
+                <div className='chart'>
+                    <h3>Chart title : Line-chart</h3>
                     <LineChart
                         width={500}
                         height={300}
@@ -70,7 +70,8 @@ const Dashboard = () => {
 
 
                 </div>
-                <div>
+                <div className='chart'>
+                    <h3>Chart-title: Bar-chart</h3>
                     <BarChart
                         width={500}
                         height={300}
