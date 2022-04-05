@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useFood from '../../hooks/useFood';
-import Comment from '../Comment/Comment';
 import img from '../img/ice-cream.png';
 import SixComments from '../SixComments/SixComments';
 import './Home.css'
