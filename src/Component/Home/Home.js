@@ -7,13 +7,15 @@ import SixComments from '../SixComments/SixComments';
 import './Home.css'
 
 const Home = () => {
+
     const navigate = useNavigate();
+
     const showComments = () => {
         const path = `/reviews`;
         navigate(path);
     }
     const [comments, setComments] = useFood();
-
+    const limitSlice = comments.slice(0, 3)
     return (
         <div className='home'>
             <div className='home-page-container'>
@@ -31,7 +33,7 @@ const Home = () => {
                 <h1>CUSTOMER REVIEWS({comments.length})</h1>
                 <div className='review-container'>
                     {
-                        comments.map(comment => <SixComments key={comment.id} comment={comment}></SixComments>)
+                        limitSlice.map(comment => <SixComments key={comment.id} comment={comment}></SixComments>)
                     }
                 </div>
                 <button onClick={showComments} className='see-all-reviews'>See all reviews</button>
