@@ -6,7 +6,7 @@
 
 .page-title {
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .good-food {
@@ -79,7 +79,4 @@
         grid-template-columns: 1fr;
     }
 
-    .review-container {
-        grid-template-columns: repeat(1fr);
-    }
 }
