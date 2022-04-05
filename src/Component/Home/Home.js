@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import useFood from '../../hooks/useFood';
 import Comment from '../Comment/Comment';
 import img from '../img/ice-cream.png';
+import SixComments from '../SixComments/SixComments';
 import './Home.css'
 
 const Home = () => {
@@ -10,14 +12,10 @@ const Home = () => {
         const path = `/reviews`;
         navigate(path);
     }
-    const [comments, setComments] = useState([]);
-    useEffect(() => {
-        fetch('comments.json')
-            .then(res => res.json())
-            .then(data => setComments(data))
-    }, []);
+    const [comments, setComments] = useFood();
+
     return (
-        <div>
+        <div className='home'>
             <div className='home-page-container'>
                 <div className='page-title'>
                     <h1>YOU WILL KNOW</h1>
@@ -33,7 +31,7 @@ const Home = () => {
                 <h1>CUSTOMER REVIEWS({comments.length})</h1>
                 <div className='review-container'>
                     {
-                        comments.map(comment => <Comment key={comment.id} comment={comment}></Comment>)
+                        comments.map(comment => <SixComments key={comment.id} comment={comment}></SixComments>)
                     }
                 </div>
                 <button onClick={showComments} className='see-all-reviews'>See all reviews</button>

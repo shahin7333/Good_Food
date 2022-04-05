@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useFood from '../../hooks/useFood';
 import SixComments from '../SixComments/SixComments';
 import './Reviews.css'
 
 
 const Reviews = () => {
-    const [comments, setComments] = useState([]);
-    useEffect(() => {
-        fetch('sixcomments.json')
-            .then(res => res.json())
-            .then(data => setComments(data))
-    }, []);
+    const [comments, setComments] = useFood([]);
 
     return (
         <div className='customer-six-comments'>
